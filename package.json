@@ -1,0 +1,11 @@
+{
+  "name": "@memberclicks/mc-errors",
+  "version": "0.0.7",
+  "description": "Package to format errors for MC",
+  "main": "mc-errors.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Memberclicks",
+  "license": "ISC"
+}
