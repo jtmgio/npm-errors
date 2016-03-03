@@ -1,6 +1,6 @@
 {
   "name": "@memberclicks/mc-errors",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "description": "Package to format errors for MC",
   "main": "mc-errors.js",
   "scripts": {
