@@ -39,14 +39,14 @@ function McErrors(){
 ** DESC - This will create an error block
 **-------------------------------------------------------------------------------------
 */
-function fnCreateErrorBlock( status_code, error, message ){
-	return {
+function fnCreateErrorBlock( status_code, error, message, dirname ){
+	return JSON.stringify({
 		"timestamp": new Date().getTime(),
 		"status": status_code,
 		"error":error,
 		"message": message,
-		"path":__dirname
-	}
+		"path": dirname
+	});
 }
 /*
 **-------------------------------------------------------------------------------------
