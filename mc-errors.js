@@ -29,10 +29,25 @@ module.exports = McErrors();
 */
 function McErrors(){
 	return {
-		formatErrors : fnFormatErrors
+		formatErrors : fnFormatErrors,
+		createErrorBlock : fnCreateErrorBlock
 	}
 }
-
+/*
+**-------------------------------------------------------------------------------------
+** METHOD NAME - fnCreateErrorBlock
+** DESC - This will create an error block
+**-------------------------------------------------------------------------------------
+*/
+function fnCreateErrorBlock( status_code, error, message ){
+	return {
+		"timestamp": new Date().getTime(),
+		"status": status_code,
+		"error":error,
+		"message": message,
+		"path":__dirname
+	}
+}
 /*
 **-------------------------------------------------------------------------------------
 ** METHOD NAME - fnFormatErrors
